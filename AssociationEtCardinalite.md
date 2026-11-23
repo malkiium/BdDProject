@@ -1,9 +1,10 @@
-Notre modèle comporte trois associations principales :
 
-Pilotes – Écuries : cette association permet de représenter les écuries pour lesquelles les pilotes ont couru. Un pilote peut avoir couru pour plusieurs écuries, et une écurie peut avoir accueilli plusieurs pilotes.
+Notre modèle comporte quatre associations principales :
 
-Pilotes – Saisons : cette association permet de relier les pilotes aux saisons auxquelles ils ont participé. Un pilote peut participer à plusieurs saisons, et une saison peut comporter plusieurs pilotes.
+Pilotes et Saisons : cette association permet de représenter les saisons remportées par les pilotes. Un pilote peut remporter une ou plusieurs saisons (1,n), et une saison ne peut être remportée que par un seul pilote (1,1).
 
-Écuries – Saisons : cette association permet de représenter les écuries présentes durant les différentes saisons du championnat. Une écurie peut participer à plusieurs saisons, et une saison peut comporter plusieurs écuries.
+Saisons et Écuries : cette association permet de représenter les écuries pour lesquelles les champions couraient durant chaque saison. Une saison est associée à une seule écurie (1,1), et une écurie peut être associée à une ou plusieurs saisons (1,n).
 
-Dans notre diagramme, les trois associations possèdent des cardinalités **(1,N)** de chaque côté, représentant des relations plusieurs-à-plusieurs.
+Pilotes et Pays : cette association permet de représenter la nationalité des pilotes. Un pilote possède une seule nationalité dans notre modèle (1,1), et un pays peut être associé à aucun, un ou plusieurs pilotes (0,n).
+
+Écuries et Pays : cette association permet de représenter le pays dans lequel les écuries sont basées. Une écurie est basée dans un seul pays (1,1), et un pays peut accueillir aucune, une ou plusieurs écuries (0,n).
